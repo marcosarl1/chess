@@ -1,4 +1,4 @@
-package com.chess.boardgame;
+package com.chess.model.boardgame;
 
 public class Piece {
 
