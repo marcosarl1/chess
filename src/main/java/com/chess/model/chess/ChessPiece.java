@@ -6,7 +6,7 @@ import com.chess.model.boardgame.Position;
 
 public abstract class ChessPiece extends Piece {
 
-    private Color color;
+    private final Color color;
     private int moveCount;
 
     public ChessPiece(Board board, Color color) {
@@ -22,11 +22,11 @@ public abstract class ChessPiece extends Piece {
         return moveCount;
     }
 
-    public void increaseMoveCount() {
+    protected void increaseMoveCount() {
         moveCount++;
     }
 
-    public void decreaseMoveCount() {
+    protected void decreaseMoveCount() {
         moveCount--;
     }
 
